@@ -59,7 +59,7 @@ function MedicinesPage() {
 
   const save = async () => {
     if (!form.name) return toast.error("Name is required");
-    const payload: Record<string, unknown> = {
+    const payload = {
       name: form.name,
       code: form.code || null,
       generic_name: form.generic_name || null,
