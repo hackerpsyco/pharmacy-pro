@@ -75,11 +75,7 @@ function MedicinesPage() {
       gst: Number(form.gst) || 0,
       quantity: Number(form.quantity) || 0,
       min_stock: Number(form.min_stock) || 0,
-      dosage_type: form.dosage_type ?? "Tablet",
-      prescription_required: !!form.prescription_required,
-      rack_number: form.rack_number || null,
-      description: form.description || null,
-      image_url: form.image_url || null,
+      dosage_type: (form.dosage_type ?? "Tablet") as never,
     };
     const { error } = editingId
       ? await supabase.from("medicines").update(payload).eq("id", editingId)
