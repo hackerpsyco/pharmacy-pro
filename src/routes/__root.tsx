@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Medicare" },
+      { name: "description", content: "Pharmacy Pro is a web application for managing medicine inventory, sales, and stock for pharmacies." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Medicare" },
+      { property: "og:description", content: "Pharmacy Pro is a web application for managing medicine inventory, sales, and stock for pharmacies." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Medicare" },
+      { name: "twitter:description", content: "Pharmacy Pro is a web application for managing medicine inventory, sales, and stock for pharmacies." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/jkfAp2fl3LX5BTu8GdOHYgrMSk32/social-images/social-1780417111542-Gemini_Generated_Image_72r6lw72r6lw72r6.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/jkfAp2fl3LX5BTu8GdOHYgrMSk32/social-images/social-1780417111542-Gemini_Generated_Image_72r6lw72r6lw72r6.webp" },
     ],
     links: [
       {
