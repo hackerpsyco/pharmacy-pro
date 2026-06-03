@@ -21,9 +21,10 @@ function AuthedLayout() {
         <AppSidebar />
         <div className="flex-1 flex flex-col min-w-0">
           <header className="h-14 flex items-center gap-2 border-b bg-card px-3 sticky top-0 z-10">
-            <SidebarTrigger />
+            <SidebarTrigger className="h-9 w-9 border border-border bg-background shadow-sm hover:bg-accent hover:text-accent-foreground" />
             <div className="text-sm font-medium">MediShop Pharmacy</div>
           </header>
+
           <main className="flex-1 p-4 md:p-6 overflow-auto">
             <Outlet />
           </main>
