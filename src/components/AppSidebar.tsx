@@ -26,11 +26,13 @@ const items = [
 ];
 
 export function AppSidebar() {
-  const { state } = useSidebar();
-  const collapsed = state === "collapsed";
+  const { state, isMobile, setOpenMobile } = useSidebar();
+  const collapsed = state === "collapsed" && !isMobile;
   const navigate = useNavigate();
   const pathname = useRouterState({ select: (r) => r.location.pathname });
   const isActive = (url: string) => pathname === url || pathname.startsWith(url + "/");
+  const handleNav = () => { if (isMobile) setOpenMobile(false); };
+
 
   const logout = async () => {
     await supabase.auth.signOut();
